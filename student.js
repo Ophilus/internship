@@ -1,30 +1,29 @@
 var StudentList = [
 
 ["Andrew Kostenko",
-		"Julia Veselkina",
-		"Maria Perechrest",
-		"Vasul Horban",
-		"Ihor Kostuk",
-		"Oleg Storozhuk",
-		"Romania Burko"],
+"Julia Veselkina",
+"Maria Perechrest",
+"Vasul Horban",
+"Ihor Kostuk",
+"Oleg Storozhuk",
+"Romania Burko"],
 
 ["4","5","3","4","2","1","5"],
 
 ["Ivan Franko National University of Lviv",
-		"Lviv Polytechnic National University",
-		"Ukrainian Catholic University",
-		"Ivan Franko National University of Lviv",
-		"Lviv Polytechnic National University",
-		"Ukrainian Catholic University",
-		"Ivan Franko National University of Lviv"]
+"Lviv Polytechnic National University",
+"Ukrainian Catholic University",
+"Ivan Franko National University of Lviv",
+"Lviv Polytechnic National University",
+"Ukrainian Catholic University",
+"Ivan Franko National University of Lviv"]
 
 ];
-
 class Knowledge{
-  constructor(level) {
-  	this.level = level;
-  }
-  ShowKnowl(){
+	constructor(level) {
+		this.level = level;
+	}
+	ShowKnowl(){
 		return this.level;
 	}
 }
@@ -87,14 +86,12 @@ for (var i = 0; i <= StudentList[0].length - 1; i++) {
 	var internship = new Internship("Interlink");
 
 	if(knowl > 3){
-	Intern.push(student.ShowStud());
+		Intern.push(student.ShowStud());
 	}
 	
 
 }
 console.log("List of internship's students:");
 for (var i = 0; i <= Intern.length - 1; i++) {
-console.log(internship.GetStudents(Intern[i]));
+	console.log(internship.GetStudents(Intern[i]));
 }
-
-
