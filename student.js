@@ -71,3 +71,30 @@ class	Internship{
 	}
 }
 
+var Intern = [];
+for (var i = 0; i <= StudentList[0].length - 1; i++) {
+	
+
+	var knowl = new Knowledge(StudentList[1][i]);
+	knowl = knowl.ShowKnowl();
+
+	var student = new Student(StudentList[0][i]);
+	student.SetKnowledge(knowl);
+
+	var univer = new University(StudentList[2][i]);
+	univer.AddStudent(student);
+	
+	var internship = new Internship("Interlink");
+
+	if(knowl > 3){
+	Intern.push(student.ShowStud());
+	}
+	
+
+}
+console.log("List of internship's students:");
+for (var i = 0; i <= Intern.length - 1; i++) {
+console.log(internship.GetStudents(Intern[i]));
+}
+
+
